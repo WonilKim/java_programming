@@ -1,4 +1,4 @@
-package chapter08;
+package chapter08.page346Test;
 
 public class HRSTest {
 
@@ -44,7 +44,7 @@ public class HRSTest {
         Object m1 = new Manager();
         Employee m2 = new Manager();
         Manager m3 = new Manager();
-        Director m4 = new Manager();
+        //Director m4 = new Manager();
  
     }
 }
