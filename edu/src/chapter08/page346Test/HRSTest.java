@@ -44,7 +44,7 @@ public class HRSTest {
         Object m1 = new Manager();
         Employee m2 = new Manager();
         Manager m3 = new Manager();
-        //Director m4 = new Manager();
+        Director m4 = new Manager(); // 에러 발생, 자식에 부모의 객체를 할당 시도.
  
     }
 }

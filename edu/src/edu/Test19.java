@@ -6,9 +6,9 @@ public class Test19 {
 		String result = "";
 
 		if (score >= 60) {
-			result = "ÇÕ°Ý";
+			result = "í•©ê²©";
 		} else {
-			result= "ºÒÇÕ°Ý";
+			result= "ë¶ˆí•©ê²©";
 		}
 		System.out.println(result);
 	}

@@ -35,16 +35,6 @@ public class HRSTest {
         } else {
             System.err.println("서로 다른 객체입니다.");
         }
-
-        //
-        Salesman s1 = new Salesman();
-        Employee s2 = new Salesman();
-        Object s3 = new Salesman();
-
-        Object m1 = new Manager();
-        Employee m2 = new Manager();
-        Manager m3 = new Manager();
-        Director m4 = new Manager();
  
     }
 }

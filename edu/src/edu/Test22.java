@@ -8,13 +8,17 @@ public class Test22 {
 
 		switch (op) {
 		case '+':
-			System.out.println(a + b); break;
+			System.out.println(a + b); 
+			break;
 		case '-':
-			System.out.println(a - b); break;
+			System.out.println(a - b); 
+			break;
 		case '*':
-			System.out.println(a * b); break;
+			System.out.println(a * b); 
+			break;
 		case '/':
-			System.out.println(a / b); break;
+			System.out.println(a / b); 
+			break;
 		}
 	}
 }

@@ -7,6 +7,7 @@ public class Test21 {
 		char op = '+';
 
 		if (op == '+') {
+			int z = a + b;
 			System.out.println(a + b);
 		} else if (op == '-') {
 			System.out.println(a - b);
