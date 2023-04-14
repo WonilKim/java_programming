@@ -2,7 +2,7 @@ package chapter08;
 
 enum Mandarin {
 	금귤(600), 한라봉(500), 레드향(300), 천혜향(400), 황금향(800);
-	
+
 	private int price;
 
 	Mandarin(int p) {
@@ -28,5 +28,9 @@ public class EnumTest02 {
 		System.out.println("== 귤의 종류 ==");
 		for (Mandarin m : list)
 			System.out.println(m + ":" + m.getPrice());
+
+		// hashCode
+		Object o1 = Mandarin.금귤;
+		System.out.println("o1.hashCode() = " + o1.hashCode());
 	}
 }
