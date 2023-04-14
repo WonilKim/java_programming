@@ -29,8 +29,9 @@ public class WeightTest {
         count5g += remainder / 5;
         remainder = remainder % 5; 
 
+        // 나올 수 있는 나머지 값 = 0, 1, 2, 3, 4
         // 나머지가 1인 경우 2g 과 3g 추를 사용할 수 없기 때문에
-        // 5g 추 하나를 빼고 나머지에 5를 더함
+        // 5g 추 하나를 빼고 나머지에 5를 더해 6으로 만들어줌.
         if(remainder == 1) {
             remainder += 5;
             count5g--;
