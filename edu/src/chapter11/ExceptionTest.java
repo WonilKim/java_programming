@@ -7,6 +7,8 @@ public class ExceptionTest {
             int arr[] = new int[3];
             arr[3] = 30;
             System.out.println("OK");
+
+
                 
         } catch (Exception e) {
             // TODO: handle exception

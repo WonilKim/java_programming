@@ -4,36 +4,25 @@ public class Block {
 
     private String color;
     private String shape;
+    private int rotation;
     private int xPos;
     private int yPos;
-    private int rotation;
 
-    public Block() {
-        this.color = "white";
-        this.shape = "ㄱ";
-        this.xPos = 4;
-        this.yPos = 10;
+    public Block(String c, String s) {
+
+        this.color = c;
+        this.shape = s;
         this.rotation = 0;
-    }
-
-    public Block(String color, String shape) {
-        this.color = color;
-        this.shape = shape;
-
         this.xPos = 4;
         this.yPos = 20;
-        this.rotation = 0;
-
     }
+    
+    protected void Drop() {
+        while(this.yPos > 0) {
+            System.out.println("블럭 " + this.toString());
+            this.yPos--;
 
-    public void Drop() {
-
-        while(yPos > 0) {
-            System.out.println(this.toString());
-
-            yPos--;
-            
-            //딜레이
+            //1초를 쉬도록 하는 코드
             try {
                 Thread.sleep(1000);
             } catch (InterruptedException e) {
@@ -41,31 +30,36 @@ public class Block {
                 e.printStackTrace();
             }
         }
-        
-    }
-
-    public void MoveLeft() {
-        this.xPos--;
-    }
-
-    public void MoveRight() {
-        this.xPos++;
-    }
-
-    public void MoveDown() {
-        this.yPos--;
-    }
-
-    public void Rotate() {
-        this.rotation += 90;
-
-        this.rotation = this.rotation % 360;
     }
 
     @Override
     public String toString() {
-        // TODO Auto-generated method stub
-        return "color=" + this.color + ", shape=" + this.shape + ", xPos=" + this.xPos + ", yPos=" + this.yPos + ", rotation=" + this.rotation;
+
+        String msg = "color=" + this.color 
+        + ", shape=" + this.shape 
+        + ", rotation=" + this.rotation 
+        + ", xPos=" + this.xPos 
+        + ", yPos=" + this.yPos; 
+
+        return msg;
+    }
+
+    protected void MoveLeft(){
+        this.xPos--;
+    }
+
+    protected void MoveRight(){
+        this.xPos++;
+    }
+
+    protected void Acc(){
+        this.yPos--;
+    }
+
+    protected void Rotate(){
+        this.rotation += 90;
+        this.rotation = this.rotation % 360;
+
     }
 
 }
